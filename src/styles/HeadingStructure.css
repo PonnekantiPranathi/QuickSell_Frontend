@@ -1,0 +1,42 @@
+.heading-structure-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*background-color: #fff;*/
+    /*border: 1px solid #ccc;
+    border-radius: 5px;*/
+    padding: 10px;
+    margin-top: 400px;
+    margin-bottom: 30px;
+    margin-left: 18px;
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+    white-space: nowrap;
+  }
+  
+  .image-heading-structure {
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+  }
+  
+  .name-heading-structure {
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 9px;
+    flex-grow: 1;
+  }
+  
+  .card-count-heading-structure {
+    font-size: 14px;
+    color: #777;
+    margin-right: 56px;
+  }
+  
+  .add-icon-heading-structure, 
+  .menu-icon-heading-structure {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  

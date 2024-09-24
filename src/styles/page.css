@@ -1,0 +1,9 @@
+/* Page.css */
+.page-container {
+    background-color: #f0f0f0; /* Light grey background */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+    text-align: center;      /* Aligns text to the center */
+  }

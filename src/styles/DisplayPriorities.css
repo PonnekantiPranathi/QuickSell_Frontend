@@ -1,0 +1,23 @@
+.page-container {
+    padding-top: 80px; /* Adjust padding for the fixed header */
+    background-color: #f0f0f0; /* Light grey background */
+    padding: 20px;
+
+}
+  
+
+.priority-columns {
+display: flex;
+justify-content: space-between; 
+margin-top: -410px;
+margin-left: -10px;
+
+}
+
+.priority-column {
+flex: 1;
+padding: 0 -5px; 
+}
+
+
+

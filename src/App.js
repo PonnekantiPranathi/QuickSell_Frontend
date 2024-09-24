@@ -1,25 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import HeaderComponent from './components/HeaderComponent';
+import DisplayPriority from './pages/DisplayPriority';
+import DisplayStatus from './pages/DisplayStatus';
+import DisplayUser from './pages/DisplayUser';
+import PriorityOrdering from './pages/PriorityOrdering';
+import TitleOrdering from './pages/TitleOrdering';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <HeaderComponent />  {/* Header stays fixed across all pages */}
+      <Routes>
+        <Route path="/priority" element={<DisplayPriority />} />
+        <Route path="/status" element={<DisplayStatus />} />
+        <Route path="/user" element={<DisplayUser />} />
+
+        <Route path="/priority-ordering-user" element={<DisplayUser />} />
+        <Route path="/title-ordering-user" element={<DisplayUser />} />
+        <Route path="/priority-ordering-priority" element={<DisplayPriority />} />
+        <Route path="/title-ordering-priority" element={<DisplayPriority />} />
+        <Route path="/priority-ordering-status" element={<DisplayStatus />} />
+        <Route path="/title-ordering-status" element={<DisplayStatus />} />
+        <Route path="*" element={<Navigate to="/status" />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

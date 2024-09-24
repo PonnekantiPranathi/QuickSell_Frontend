@@ -1,0 +1,21 @@
+.page-container {
+    padding-top: 80px; /* Adjust padding for the fixed header */
+    background-color: #f0f0f0; /* Light grey background */
+    padding: 20px;
+}
+  
+
+.status-columns {
+display: flex;
+justify-content: space-between; 
+margin-top: -320px;
+}
+
+.status-column {
+flex: 1;
+padding: 0 10px; 
+
+}
+
+
+
